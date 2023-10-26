@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 # This script displays hour
 hour=0
 minute=1
