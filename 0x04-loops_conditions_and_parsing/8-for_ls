@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays hour
+cmd=$(ls)
+for i in $cmd
+do
+	new_name=$(echo "$i" | cut -d '-' -f 2-)
+	echo "$new_name"
+done
