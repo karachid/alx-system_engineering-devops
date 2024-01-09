@@ -11,11 +11,11 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend anas_frontend
+frontend lb_frontend
         bind *:80
         mode http
-        default_backend anas_backend
-backend anas_backend
+        default_backend lb_backend
+backend lb_backend
         balance roundrobin
         server 428625-web-01 54.158.217.135:80 check
         server 428625-web-02 35.175.126.125:80 check
