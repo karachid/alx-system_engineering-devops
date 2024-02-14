@@ -20,7 +20,7 @@ def count_words(subreddit, word_list):
     """
     global after
     global count
-    
+
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {
         "User-Agent": "Mozilla"
